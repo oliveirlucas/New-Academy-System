@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Cadastro Aluno</title>
+    <title>Lista Alunos</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../New-Academy-System/images/favicon.png">
     <!-- Pignose Calender -->
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../New-Academy-System/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
     <!-- Custom Stylesheet -->
     <link href="../../New-Academy-System/css/style.css" rel="stylesheet">
+	
 
 </head>
 
@@ -49,7 +50,7 @@
                     <b class="logo-abbr"><img src="../../New-Academy-System/images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="../../New-Academy-System/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="../../New-Academy-System/images/logo-text.png" alt="">
+                        <img src="../../New-Academy-System/images/logo-text.png" alt="" width="180" height="20" >
                     </span>
                 </a>
             </div>
@@ -250,7 +251,7 @@
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li>
-                        <a href="javascript:void()" aria-expanded="false">
+                        <a href="../../New-Academy-System/index.html" aria-expanded="false">
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
@@ -261,6 +262,25 @@
                         <ul aria-expanded="false">
                             <li><a href="./cadastro-aluno.html">Cadastro Aluno</a></li>
 							<li><a href="./lista-alunos.html">Lista de Alunos</a></li>
+                        </ul>
+                    </li>
+					<li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-graduation"></i><span class="nav-text">Graduação</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./cadastro-aluno-graduacao.html">Cadastrar Alunos Graduação</a></li>
+							<li><a href="./relatorio-participacao.html">Relatório Participação</a></li>
+                        </ul>
+                    </li>
+					<li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-credit-card"></i><span class="nav-text">Financeiro</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./ficha-financeira.html">Ficha financeira</a></li>
+							<li><a href="./lacamento-caixa.html">Lançamento no caixa</a></li>
+							<li><a href="./cancelamento-caixa.html">Cancelamento no caixa</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -275,15 +295,41 @@
         ***********************************-->
         <div class="content-body">
             <!-- row -->
+
             <div class="container-fluid">
                 <div class="row">
-                   <div class="col-lg-12">
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Lista de Alunos</h4>
 								<br>
-                                <div class="basic-form">
-                                    
+								<input type="text" class="form-control input-default" placeholder="Pesquisar" id="filtro">
+								<br>
+                                <div class="table-responsive">
+                                    <table class="table header-border">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome completo</th>
+                                                <th>CPF</th>
+                                                <th>Professor</th>
+                                                <th>Modalidade</th>
+                                                <th>Prajied/Faixa</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="javascript:void(0)">Lucas Evangelista de Oliveira</a>
+                                                </td>
+                                                <td>02086709633</td>
+                                                <td><span class="text-muted">Sandro Sales</span>
+                                                </td>
+                                                <td>Muay Thai</td>
+                                                <td>Verde</td>
+                                                <td><span class="label gradient-1 rounded">Habilitado</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
